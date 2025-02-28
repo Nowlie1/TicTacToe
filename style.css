@@ -27,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 4em;
     background-color: var(--bgcell);
     border-radius: 10px;
     cursor: pointer;
