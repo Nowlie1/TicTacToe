@@ -51,7 +51,7 @@ body {
     background-color: var(--txt);
     color: var(--bg)
 }
-#reset:hover{
+#reset:hover, #mode-toggle:hover{
     background-color: var(--bghover);
     color: var(--bg)
 }
