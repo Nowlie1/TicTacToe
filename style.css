@@ -1,0 +1,76 @@
+:root{
+    --bg: #231b25;
+    --bghover: #58465f;
+    --bgcell: #3F3244;
+    --txt: #cfb9da; 
+    --xcolor: #e6346c;
+    --ocolor: #f7965e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: var(--txt);
+    background-color: var(--bg);
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background-color: var(--bgcell);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--bg);
+}
+.cell:hover {
+    background-color: var(--bghover);
+    color: var(--txt);
+}
+.cell.taken {
+    cursor: not-allowed;
+}
+#reset, #mode-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--txt);
+    color: var(--bg)
+}
+#reset:hover{
+    background-color: var(--bghover);
+    color: var(--bg)
+}
+#status {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.Xcolor, .Xcolor:hover {
+    color: var(--xcolor);
+}
+.Ocolor, .Ocolor:hover {
+    color: var(--ocolor);
+}
+.dark-mode {
+    --bg: #cfb9da;
+    --bghover: #b596c4;
+    --bgcell: #a685b6;
+    --txt: #231b25 ; 
+    --xcolor: #9c1943;
+    --ocolor: #6b1980;
+}
